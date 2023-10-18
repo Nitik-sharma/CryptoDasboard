@@ -1,9 +1,9 @@
-.flex-info{
-    display: flex;
+.container{
+    display:flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 1.5rem 3rem;
-
+   
 }
 
 .crypto-tracter-heading,.real-time-heading{
@@ -54,14 +54,14 @@
     width: 50%;
     z-index: 100;
 }
-
 .gradient{
     position: absolute;
     right: 0%;
     width: 40%;
     min-width: 250px;
-    top:8rem;
-}
+    height: 400px;
+    top:4rem;
+} 
 
 
 @media only screen and (max-width: 1250px) {
@@ -80,10 +80,11 @@
     
     }
     
-  }
+  } 
+
 
   @media only screen and (max-width: 860px) {
-    .flex-info{
+    .container{
         flex-direction: column;
     }
     .left{
@@ -121,7 +122,8 @@
         min-width: 210px;
         right: 0%;
         left:27%;
+        height: 360px;
         top:8.7rem;
     }
     
-  }
+  } 

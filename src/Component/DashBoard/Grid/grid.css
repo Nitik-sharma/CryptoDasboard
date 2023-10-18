@@ -1,0 +1,126 @@
+.grid-container{
+    width: 350px;
+    height: max-content;
+    background-color: var(--darkgray);
+    border: 2px solid var(--darkgray);
+    border-radius: .50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.grid-green:hover{
+    border: 2px solid var(--green);
+    transition: all 0.3s;
+}
+
+.grid-red:hover{
+    border: 2px solid var(--red);
+    transition: all 0.3s;
+}
+
+.top-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1.3rem;
+    padding: 1.5rem 2rem;
+}
+
+.image{
+    width: 3.4rem;
+    height: 3.4rem;
+}
+
+.name-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.symbol{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0%;
+    text-transform: uppercase;
+}
+.name{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray);
+    margin: 0%;
+    text-transform: uppercase;
+}
+
+.chip-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:0.5rem;
+    padding: 1.5rem 3rem;
+}
+
+.chip-percent{
+    border: 2px solid var(--green);
+    border-radius: 1.9rem;
+    padding: .34rem 1.34rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--green);
+    font-size: 1rem;
+}
+.chip-percent:hover{
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+}
+.trending-up:hover{
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.chip-red{
+    border: 2px solid var(--red) !important;
+    color: var(--red) !important;
+}
+.chip-red:hover{
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    transition: all 0.3s;
+}
+.trending-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--green);
+
+}
+
+.container-info{
+    
+    margin: 1.3rem;
+}
+
+.container-info h3{
+    font-size: 1rem;
+    font-weight: 500;
+
+
+}
+.total-volume{
+    font-size: 1rem;
+    color: var(--gray);
+    font-weight: 600;
+    margin: 0.2rem;
+}
+
+
+
+

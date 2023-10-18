@@ -1,0 +1,22 @@
+.grid-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+    margin:  3rem;
+}
+
+.list-info{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .list-info{
+        width: 98%;
+    }
+}
+

@@ -2,6 +2,7 @@ import React from "react";
 import "./Style.css";
 import SwipeableTemporaryDrawer from "./Drower";
 import Button from "../Buttoon/index.js";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
@@ -9,18 +10,18 @@ function Header() {
         CryptoTracker <span style={{ color: "var(--blue)" }}>.</span>
       </h1>
       <div className="links">
-        <a href="/">
+        <Link to="/">
           <p className="link">Home</p>
-        </a>
-        <a href="/">
+        </Link>
+        <Link to="/compare">
           <p className="link">Compare</p>
-        </a>
-        <a href="/">
+        </Link>
+        <Link to="/watchlist">
           <p className="link">WatchList</p>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/dashboard">
           <Button text={"Dashboard"}  onclick={()=>console.log("hello world")}/>
-        </a>
+        </Link>
       </div>
       <div className="mobile-view">
         <SwipeableTemporaryDrawer />

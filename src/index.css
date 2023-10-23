@@ -43,3 +43,23 @@ a{
   color: var(--white) !important;
   text-decoration: none !important;
 }
+html{
+  scroll-behavior: smooth;
+}
+
+.gray-wrapper{
+  display: block;
+  width: 90%;
+  background-color: var(--darkgray);
+  margin: 1.5rem auto;
+  border-radius: 0.8rem;
+}
+
+.info-wrapper{
+  display: block;
+  width: 90%;
+  background-color: var(--darkgray);
+  margin: 1.5rem auto;
+  border-radius: 0.8rem;
+  padding:1rem 1rem ;
+}

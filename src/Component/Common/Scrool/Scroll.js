@@ -1,30 +1,45 @@
-import React from 'react'
-import './Scrool.css'
-import KeyboardDoubleArrowUpTwoToneIcon from '@mui/icons-material/KeyboardDoubleArrowUpTwoTone';
-function BackToBottom() {
-    let mybutton = document.getElementById("myBtn");
+import React, { useEffect, useState } from "react";
+import "./Scrool.css";
+import KeyboardDoubleArrowUpTwoToneIcon from "@mui/icons-material/KeyboardDoubleArrowUpTwoTone";
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+function BackToTop() {
+  const [showButton, setShowButton] = useState(false);
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  useEffect(() => {
+    // Add an event listener for the "scroll" event when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Function to handle scroll events
+  function handleScroll() {
+    if (window.scrollY > 20) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
   }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+  // Function to scroll back to the top of the page
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
-    <div className='back-to-top' id='myBtn' onClick={()=>topFunction()}>
-      <KeyboardDoubleArrowUpTwoToneIcon style={{color:"var(--blue)"} } className='back-logo' />
+    <div
+      className={`back-to-top ${showButton ? "visible" : ""}`}
+      onClick={topFunction}
+    >
+      <KeyboardDoubleArrowUpTwoToneIcon
+        style={{ color: "var(--blue)" }}
+        className="back-logo"
+      />
     </div>
-  )
+  );
 }
 
-export default BackToBottom;
+export default BackToTop;

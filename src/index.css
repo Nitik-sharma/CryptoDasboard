@@ -62,3 +62,17 @@ html {
   border-radius: 0.8rem;
   padding: 1rem 1rem;
 }
+.coin-select {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .coin-select {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}

@@ -1,18 +1,17 @@
-.info-wreaper-heading{
-    padding-bottom:1rem ;
+.info-wreaper-heading {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
-.info-wreaper-discription{
-    padding-bottom:1rem ;
-    
-   
+.info-wreaper-discription {
+  padding-bottom: 1rem;
 }
 
-.info-wreaper-discription a{
-    color: var(--gray) !important; 
+.info-wreaper-discription a {
+  color: var(--gray) !important;
 }
 
-.info-wreaper-discription a:hover{
-    color: var(--blue) !important;
-    text-decoration: underline !important;  
+.info-wreaper-discription a:hover {
+  color: var(--blue) !important;
+  text-decoration: underline !important;
 }

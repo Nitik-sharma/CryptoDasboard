@@ -9,7 +9,7 @@ function CoinInfo({ heading, desc }) {
 
   const [flag, setFlag] = useState(false);
   return (
-    <div className="info-wrapper">
+    <div className="info-wrapper" style={{ padding: "0rem 1rem" }}>
       <h1 className="info-wreaper-heading">{heading}</h1>
       {desc?.length > 200 ? (
         <p

@@ -7,10 +7,10 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import "./Select.css";
 
-export default function SelectDays({ day, handleDayChange, noText }) {
+export default function SelectDays({ day, handleDayChange, noPtag }) {
   return (
     <div className="select">
-      <p>Price in Change</p>
+      {noPtag && <p>Price in Change</p>}
       <Select
         labelId="demo-simple-select-label"
         id="demo-simple-select"
@@ -32,7 +32,6 @@ export default function SelectDays({ day, handleDayChange, noText }) {
             },
           },
         }}
-        className={noText && "select-coin"}
       >
         <MenuItem value={7}>7 Days</MenuItem>
         <MenuItem value={10}>10 Days</MenuItem>

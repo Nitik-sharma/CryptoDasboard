@@ -16,11 +16,14 @@ function Header() {
         <Link to="/compare">
           <p className="link">Compare</p>
         </Link>
-        <Link to="/watchlist">
+        {/* <Link to="/watchlist">
           <p className="link">WatchList</p>
-        </Link>
+        </Link> */}
         <Link to="/dashboard">
-          <Button text={"Dashboard"}  onclick={()=>console.log("hello world")}/>
+          <Button
+            text={"Dashboard"}
+            onclick={() => console.log("hello world")}
+          />
         </Link>
       </div>
       <div className="mobile-view">
